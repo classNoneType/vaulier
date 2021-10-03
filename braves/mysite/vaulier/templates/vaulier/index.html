@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="content-language" content="es"/>
+    <meta name="distribution" content="global"/>
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="{% static 'images/icono_v.png' %}" sizes="64x64" />
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/templatemo_misc.css' %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{% static 'css/templatemo_style.css' %}">
+
+
+</head>
+<body>
+    <div class="responsive-navigation visible-sm visible-xs">
+        <a href="#" class="menu-toggle-btn">
+            <i class="fa fa-bars fa-2x"></i>
+        </a>
+        <div class="navigation responsive-menu">
+            <ul>
+                <li class="home"><a href="templatemo">Inicio</a></li>
+	            <li class="about"><a href="#about">Quienes somos</a></li>
+	            <li class="portfolio"><a href="#portfolio">Catalogo</a></li>
+	            <li class="contact"><a href="#contact">Contactanos</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<div id="main-sidebar" class="hidden-xs hidden-sm">
+		<div class="logo">
+			<div class="row">
+				<div class="col-md-12">
+                    <a href="{% url 'index' %}">
+                        <img src="{% static 'images/log.png' %}" alt="Logo">
+                    </a>
+				</div>
+			</div>
+			<span>Tienda nacional de vinilos</span>
+		</div>
+
+		<div class="navigation">
+	        <ul class="main-menu">
+	            <li class="home"><a href="#templatemo">Inicio</a></li>
+	            <li class="about"><a href="#about">Quienes somos</a></li>
+	            <li class="portfolio"><a href="#portfolio">Catalogo</a></li>
+	            <li class="contact"><a href="#contact">Contactanos</a></li>
+	        </ul>
+		</div>
+	</div>
+
+	<div id="main-content">
+		<a href="https://wa.me/56949482579?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>                
+
+		<div id="templatemo">
+			<div class="main-slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="slider-caption">
+								<h2>Tienda online</h2>
+								<p>Descubre los descuentos que tenemos para ti en la tienda online.</p>
+								<!--<a href="#" class="largeButton homeBgColor">Read More</a>-->
+							</div>
+							<img src="{% static 'images/slide1.jpg' %}" alt="Slide 1">
+						</li>
+						<li>
+							<div class="slider-caption">
+								<h2>Tienda fisica</h2>
+								<p>Ven a visitar nuestra tienda fisica que se encuentra en Providencia #666</p>
+								<a href="#contact" class="largeButton homeBgColor">Ver ubicacion</a>
+							</div>
+							<img src="{% static 'images/slide3.jpg' %}" alt="Slide 2">
+						</li>
+						<li>
+							<div class="slider-caption">
+								<h2>GesBod</h2>
+								<p>Echale un vistazo a nuestro catalogo</p>
+								<a href="#portfolio" class="largeButton homeBgColor">Ver catalogo</a>
+							</div>
+							<img src="{% static 'images/slide2.jpg' %}" alt="Slide 3">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="welcome-text">
+							<h2>Bienvenidos a Vaulier</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="container-fluid">
+				<div id="about" class="section-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title">
+								<h2>Quienes somos</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row our-story">
+						<div class="col-md-8">
+							<h3>Tienda GesBod</h3>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, exercitationem, laboriosam, modi non quisquam voluptas accusamus numquam ipsum reiciendis saepe veniam cupiditate explicabo autem. Quisque in metus tristique, gravida dolor ut, varius neque. Maecenas ac risus aliquam, facilisis massa id, vulputate elit.<br><br>
+							Curabitur pretium arcu dictum, faucibus diam quis, commodo turpis. Proin viverra, risus eget egestas sodales, felis ante scelerisque ligula, eget condimentum diam ligula eu tellus. Repudiandae tempore dolore deserunt nemo voluptatum consectetur aspernatur expedita aliquid iste illo enim molestias vel animi quod.
+						</div>
+						<div class="col-md-4">
+							<div class="story-image">
+								<img src="{% static 'images/imagen-inicio.jpg' %}" alt="">
+							</div>
+						</div>
+					</div> <!-- /.row -->
+				</div> <!-- /#about -->
+
+
+				<div id="portfolio" class="section-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="section-title">
+								<h2>Catalogo</h2>
+								
+							</div>
+							<div class="col-md-14">
+								<form method="GET" action="">
+									<fieldset class="buscador-vinilo">
+										<legend class="legend-buscador"> Buscador </legend>
+										<div class="row contact-form">
+											<div class="col-md-6">
+												<input class="buscador" type="text" maxlength="40" name="q" type="text" value="{{ request.GET.q }}" placeholder="Ingresa el Artista o el Album a buscar..."/>>
+											</div>
+												<div class="col-md-6">
+													<input type="submit" class="btn btn-primary" value="Buscar vinilo">
+												</div>
+											</div>
+											<script>
+												function ObtenerBusqueda() {
+													var Busqueda = document.getElementsByClassName("buscador");
+												}
+											</script>
+									</fieldset>
+									<br></br>
+									<br></br>
+								</form>
+
+							</div>
+						</div>
+					</div>
+					{% for producto in productos %}
+						<div class="row">
+							<div class="col-md-4">
+								<div class="portfolio-item">
+									<div class="portfolio-thumb">
+
+										<a href="{% url 'detail' pk=producto.pk %}">
+											<img src="../../static/images/vinilos/{{ producto.ImagenProducto }}" alt="">
+										</a>
+										<br></br>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-6">
+									<h3 class="catalogo-titulo"><a href="{% url 'detail' pk=producto.pk %}">{{ producto.AlbumProducto }}</a></h3>
+									<p class="catalogo-titulo"><a >{{ producto.ArtistaProducto }}</a></h3>
+									<br></br>
+									<p class="catalogo-detatlle"><a >Stock disponible: {{ producto.StockProducto}}</a></p>
+									<h3 class="catalogo-detatlle"><a >Precio: ${{ producto.PrecioProducto}}</a></h3>
+								</div>
+								<div class="col-md-2">
+									<button type="button"class="btn btn-warning btn-lg" onclick="location.href='{% url 'detail' pk=producto.pk %}'">Comprar vinilo</button>
+
+								</div>
+								<br></br>
+								<br></br>
+								<br></br>
+							</div>
+
+						</div>
+					{% endfor %}
+				</div>
+			<div id="contact" class="section-content">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-title">
+							<h2>Contactanos</h2>
+						</div> <!-- /.section-title -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="map-holder">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.7001990865106!2d-70.62595598423722!3d-33.43105970390454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c587da2eda0f%3A0x2f94c05135b109d8!2sAv.%20Providencia%20666%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1621835274713!5m2!1ses-419!2scl"
+								frameborder="0"
+								style="border:0"
+								allowfullscreen
+								loading="lazy">
+							</iframe>
+							<style>
+								.map-holder {
+									position: relative;
+									padding-bottom: 30%;
+									height: 0;
+									overflow: hidden;
+								}
+								.map-holder iframe {
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100% !important;
+									height: 100% !important;
+								}
+							</style>
+						</div> 
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				<div class="row contact-form">
+					<div class="col-md-4">
+						<label for="name-id" class="required">Nombre:</label>
+						<input name="name-id" type="text" id="name-id" maxlength="40">
+					</div> <!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<label for="email-id" class="required">Email:</label>
+						<input name="email-id" type="text" id="email-id" maxlength="40">
+					</div> <!-- /.col-md-4 -->
+					<div class="col-md-4">
+						<label for="subject-id">Asunto:</label>
+						<input name="subject-id" type="text" id="subject-id" maxlength="60">
+					</div> <!-- /.col-md-4 -->
+					<div class="col-md-12">
+						<label for="message-id" class="required">Mensaje:</label>
+						<textarea name="message-id" id="message-id" rows="6"></textarea>
+					</div> <!-- /.col-md-12 -->
+					<div class="col-md-12">
+						<div class="submit-btn">
+							<a href="#" class="largeButton contactBgColor">Enviar mensaje</a>
+						</div> <!-- /.submit-btn -->
+					</div> <!-- /.col-md-12 -->
+				</div>
+			</div> <!-- /#contact -->
+
+		</div> <!-- /.container-fluid -->
+
+		<div class="site-footer">
+			<div class="first-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="social-footer">
+								<ul>
+									<li><a href="#" class="fa fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-twitter"></a></li>
+									<li><a href="#" class="fa fa-dribbble"></a></li>
+									<li><a href="#" class="fa fa-linkedin"></a></li>
+									<li><a href="#" class="fa fa-rss"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<p class="copyright">Copyright © 2021 <a href="#">GesBod</a>
+                            </p>
+						</div>
+						<div class="col-md-6 credits">
+							<p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+	<script src="{% static 'js/jquery.singlePageNav.js' %}"></script>
+	<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>
